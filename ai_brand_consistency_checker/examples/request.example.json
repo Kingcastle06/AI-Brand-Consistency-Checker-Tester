@@ -1,0 +1,15 @@
+{
+    "request_id":  "example-ai_brand_consistency_checker-001",
+    "tool_id":  "ai_brand_consistency_checker",
+    "input":  {
+                  "description":  "Example request for AI Brand Consistency Checker. Replace or extend with domain-specific fields during implementation planning."
+              },
+    "options":  {
+                    "output_format":  "json",
+                    "mode":  "standard"
+                },
+    "metadata":  {
+                     "submitted_by":  "demo-user",
+                     "synthetic":  true
+                 }
+}

@@ -1,0 +1,15 @@
+{
+    "request_id":  "demo-ai_brand_consistency_checker-001",
+    "tool_id":  "ai_brand_consistency_checker",
+    "input":  {
+                  "description":  "Minimal AI Brand Consistency Checker input fixture. Replace with a domain-specific fixture before implementation."
+              },
+    "options":  {
+                    "output_format":  "json",
+                    "mode":  "standard"
+                },
+    "metadata":  {
+                     "source":  "fixtures/simple",
+                     "synthetic":  true
+                 }
+}

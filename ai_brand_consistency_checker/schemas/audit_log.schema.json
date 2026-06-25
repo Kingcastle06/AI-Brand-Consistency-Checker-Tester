@@ -1,0 +1,60 @@
+{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://spec-docs.local/ai_brand_consistency_checker/audit_log.schema.json",
+    "title":  "AI Brand Consistency Checker Audit Log Event",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "event_id",
+                     "timestamp",
+                     "tool_id",
+                     "actor",
+                     "action",
+                     "resource",
+                     "outcome",
+                     "trace_id"
+                 ],
+    "properties":  {
+                       "event_id":  {
+                                        "type":  "string"
+                                    },
+                       "timestamp":  {
+                                         "type":  "string",
+                                         "format":  "date-time"
+                                     },
+                       "tool_id":  {
+                                       "type":  "string",
+                                       "const":  "ai_brand_consistency_checker"
+                                   },
+                       "actor":  {
+                                     "type":  "object",
+                                     "additionalProperties":  true
+                                 },
+                       "action":  {
+                                      "type":  "string"
+                                  },
+                       "resource":  {
+                                        "type":  "object",
+                                        "additionalProperties":  true
+                                    },
+                       "outcome":  {
+                                       "type":  "string",
+                                       "enum":  [
+                                                    "allowed",
+                                                    "denied",
+                                                    "succeeded",
+                                                    "failed",
+                                                    "needs_review"
+                                                ]
+                                   },
+                       "trace_id":  {
+                                        "type":  "string"
+                                    },
+                       "redactions":  {
+                                          "type":  "array",
+                                          "items":  {
+                                                        "type":  "string"
+                                                    }
+                                      }
+                   }
+}

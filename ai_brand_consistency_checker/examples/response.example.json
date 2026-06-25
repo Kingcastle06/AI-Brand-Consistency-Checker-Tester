@@ -1,0 +1,21 @@
+{
+    "job_id":  "job-example-ai_brand_consistency_checker-001",
+    "tool_id":  "ai_brand_consistency_checker",
+    "status":  "succeeded",
+    "result":  {
+                   "summary":  "Example successful result for AI Brand Consistency Checker. Final implementation must narrow this result shape."
+               },
+    "citations":  [
+
+                  ],
+    "warnings":  [
+
+                 ],
+    "artifacts":  [
+
+                  ],
+    "metadata":  {
+                     "trace_id":  "trace-example",
+                     "synthetic":  true
+                 }
+}

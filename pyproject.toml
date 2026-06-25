@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai_brand_consistency_checker"
+version = "0.1.0"
+description = "AI Brand Consistency Checker"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "pydantic>=2.0",
+    "typer",
+    "python-dotenv",
+    "pdfplumber",
+    "python-docx",
+    "python-pptx",
+    "python-multipart",
+    "numpy"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+# 🛠️ This forces Hatchling to look inside the target project directory or the root
+[tool.hatch.build.targets.wheel]
+packages = ["ai_brand_consistency_checker"]
